@@ -1,0 +1,38 @@
+state pattern
+1. context class:
+    where the main method goes
+    has a state parameter
+2. state interface
+    abstract
+    states are declared here
+
+AWK structure:
+awk 'command' filename
+    i.e. awk '{print}
+print first field
+    i.e. awk '{print $1}' filename
+print multiple fields
+    i.e. awk '{print $1, $3}' filename
+print last field
+    i.e. awk '{print $NF}' filename
+print fields with different delimeter
+    i.e. awk -F ':' '{print $1}' filename
+
+different tokens (states)
+    literals
+    keyword
+    name
+    punctuation
+        ''
+        {}
+    operator
+    
+    
+different functions for lexical analyzer
+    1. read()
+    2. isolate()
+    3. store()
+    4. print()
+
+different functions for tokens
+    1.  String patternMatch()
